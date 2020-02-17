@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money exchange</title>
+
+    <script src="https://kit.fontawesome.com/12186bf6d4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="box">
+    <h1>Money exchange v1.0</h1>
+    
+    <div class="inputs" onkeydown="convertCurrency();">
+        
+        
+            <input type="number" id="valueA"><select id="listA" onchange="convertCurrency()">
+        <option value="USD">USD - United States Dollar</option>
+        <option value="EUR">EUR - Euro</option>
+        <option value="PLN">PLN - Polish złoty</option>
+        <option value="CZK">CZK - Czech koruna</option>
+        <option value="GBP">GBP - Pound sterling</option>
+        <option value="TRY">TRY - Turkish lira</option>
+        <option value="UAH">UAH - Ukrainian hryvnia</option>
+        <option value="CHF">CHF - Swiss franc</option>
+    </select>
+    <br>
+    <br>
+    <input type="number" id="valueB" disabled ><select id="listB" onchange="convertCurrency()">
+        <option value="EUR">EUR - Euro</option>
+        <option value="USD">USD - United States Dollar</option>
+        <option value="PLN">PLN - Polish złoty</option>
+        <option value="CZK">CZK - Czech koruna</option>
+        <option value="GBP">GBP - Pound sterling</option>
+        <option value="TRY">TRY - Turkish lira</option>
+        <option value="UAH">UAH - Ukrainian hryvnia</option>
+        <option value="CHF">CHF - Swiss franc</option>
+    </select>
+    </div>
+    <p>&copy; Bureeds 2020</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
