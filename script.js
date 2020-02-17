@@ -3,7 +3,7 @@ function convertCurrency(){
     var from = document.getElementById('listA').value;
     var to = document.getElementById('listB').value;
     var xmlhttp = new XMLHttpRequest();
-    var url = "http://data.fixer.io/api/latest?access_key=ff0d20d947f933010006898f8d9cb650&symbols=" + from + "," + to;
+    var url = "https://data.fixer.io/api/latest?access_key=ff0d20d947f933010006898f8d9cb650&symbols=" + from + "," + to;
     xmlhttp.open("GET", url, true);
     xmlhttp.send();
     xmlhttp.onreadystatechange = function(){
